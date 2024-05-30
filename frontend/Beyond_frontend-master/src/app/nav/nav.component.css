@@ -1,0 +1,15 @@
+.dropdown-link{
+    text-decoration: none;
+    color:white;
+}
+.dropdown-link:hover{
+    text-decoration: none;
+    color:black;
+}
+.navbar-brand{
+    font-size:30px;
+}
+.dropdown:hover .dropdown-menu
+{
+    display:block;
+}

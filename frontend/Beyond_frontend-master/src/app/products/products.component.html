@@ -1,0 +1,131 @@
+<app-nav></app-nav>
+<br><br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div class="input-group">
+        <input type="text" class="search form-control" placeholder="Search the Book" [(ngModel)]="filtervalue" (keyup)="filter()">
+        <button class=" btn btn-primary" *ngIf="f">&nbsp;&nbsp;Searching started...</button>
+      </div>
+
+
+      <br><br><br>
+      <div *ngIf="l==0 && f==true">
+        <h4>No book found on this genre</h4>
+      </div>
+
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+  <br><br>
+    <div class="row">
+    <div *ngFor="let b of products" class="col-md-4">
+      <div *ngIf="!f" >
+        <div class="card">
+            <div class="card-header"> 
+                <img *ngIf="!ed" class="img-fluid" [src]="b.pimg" alt="" >
+                <input *ngIf="ed" type="text" class="form-control" name="pimg" [(ngModel)]="b.pimg">
+                <br>
+                <h3 *ngIf="!ed">{{b.pname}}</h3>
+                <input *ngIf="ed" type="text" class="form-control" name="pname" [(ngModel)]="b.pname">
+                <h4 *ngIf="!ed">{{b.pprice | currency:'INR'}}</h4>
+                <input *ngIf="ed" type="number" class="form-control" name="pprice" [(ngModel)]="b.pprice">
+            </div>
+                <div class="card-body">
+
+                    <h4 *ngIf="!ed">Author name : {{b.pauthor}}</h4>
+                    <input *ngIf="ed" type="text" class="form-control" name="pauthor" [(ngModel)]="b.pauthor">
+                    <h5 *ngIf="!ed">Synopsis :</h5> <p>{{b.pabout}}</p>
+                    <input *ngIf="ed" type="text" class="form-control" name="pabout" [(ngModel)]="b.pabout">
+                    <div class="card-footer">
+                       <div class="row">
+                        <div class="col-md-3" *ngIf="!admin"><button class="btn btn-secondary" (click)="addtocart(b)">Cart</button></div>
+                        <div class="col-md-3" *ngIf="!admin"><button class="btn btn-primary" data-bs-target="#mymodal" data-bs-toggle="modal" (click)="buy(b)">Buy</button></div>
+                        <div class="col-md-3" *ngIf="admin && !ed"><button class="btn btn-info" (click)="edit(b)">Edit</button></div>
+                        <div class="col-md-3" *ngIf="ed"><button class="btn btn-info" (click)="update(b)">Update</button></div>
+                        <div class="col-md-3" *ngIf="admin"><button class="btn btn-danger" (click)="delete(b)">Delete</button></div>
+                      </div>
+                    </div>
+                </div>
+        </div>
+      </div>
+    </div>
+   <div class="container">
+    <div class="row">
+      <div *ngFor="let b of filteredproducts" class="col-md-4">
+        <div *ngIf="f" >
+          <div class="card">
+              <div class="card-header"> 
+                  <img *ngIf="!ed" class="img-fluid" [src]="b.pimg" alt="" >
+                  <input *ngIf="ed" type="text" class="form-control" name="pimg" [(ngModel)]="b.pimg">
+                  <br>
+                  <h3 *ngIf="!ed">{{b.pname}}</h3>
+                  <input *ngIf="ed" type="text" class="form-control" name="pname" [(ngModel)]="b.pname">
+                  <h4 *ngIf="!ed">{{b.pprice | currency:'INR'}}</h4>
+                  <input *ngIf="ed" type="number" class="form-control" name="pprice" [(ngModel)]="b.pprice">
+              </div>
+                  <div class="card-body">
+  
+                      <h4 *ngIf="!ed">Author name : {{b.pauthor}}</h4>
+                      <input *ngIf="ed" type="text" class="form-control" name="pauthor" [(ngModel)]="b.pauthor">
+                      <h5 *ngIf="!ed">Synopsis :</h5> <p>{{b.pabout}}</p>
+                      <input *ngIf="ed" type="text" class="form-control" name="pabout" [(ngModel)]="b.pabout">
+                      <div class="card-footer">
+                         <div class="row">
+                          <div class="col-md-3" *ngIf="!admin"><button class="btn btn-secondary" (click)="addtocart(b)">Cart</button></div>
+                          <div class="col-md-3" *ngIf="!admin"><button class="btn btn-primary" data-bs-target="#mymodal" data-bs-toggle="modal" (click)="buy(b)">Buy</button></div>
+                          <div class="col-md-3" *ngIf="admin && !ed"><button class="btn btn-info" (click)="edit(b)">Edit</button></div>
+                          <div class="col-md-3" *ngIf="ed"><button class="btn btn-info" (click)="update(b)">Update</button></div>
+                          <div class="col-md-3" *ngIf="admin"><button class="btn btn-danger" (click)="delete(b)">Delete</button></div>
+                        </div>
+                      </div>
+                  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+<div class="modal fade p-3" id="mymodal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-title d-flex justify-content-center">
+                <h1>Purchase Form</h1>
+            </div>
+    
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-9">
+                <form action="" class="form p-3">
+                    <div class="form-group">
+                        <label for="" class="form-label">Name</label>
+                        <input type="text" class="form-control" name="username" [(ngModel)]="username">
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="form-label">Email</label>
+                        <input type="email" class="form-control" name="email" [(ngModel)]="email">
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="form-label">Phone</label>
+                        <input type="number" class="form-control" name="phone" [(ngModel)]="phone">
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="form-label">Total amount <h3>{{price | currency:'INR'}}</h3></label>
+                        
+                      </div>
+                      <button class="btn btn-success" (click)="buynow()">Buy now</button>
+            
+                </form>
+            </div>
+            <div class="col-md-1"><button class="btn btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="col-md-1"></div>
+            <br>
+          </div>
+
+        </div>
+    </div>
+</div>
+       
+    </div>
+</div>
+

@@ -1,0 +1,39 @@
+<app-nav></app-nav>
+<div class="container-fluid main-form">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 col-12">
+            <br><br><br>
+            <form action="" class="form">
+                <legend class="d-flex justify-content-center"><h1>Contact Us</h1></legend>
+                <br>
+                <div class="form-group">
+                    <label for="" class="form-label">Name:</label>
+                    <input type="text" class="form-control" name="username" [(ngModel)]="username">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="" class="form-label">Phone:</label>
+                    <input type="number" class="form-control" pattern="[0-9]{10}" name="phone" [(ngModel)]="phone">
+                </div><br>
+                <div class="form-group">
+                    <label for="" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="email" [(ngModel)]="email">
+                </div><br>
+                <div class="form-group">
+                    <label for="" class="form-label">Message:</label>
+                    <input class="form-control" style="height: 100px;" name="msg" [(ngModel)]="msg">
+                </div><br><br>
+                <div class="form-group">
+                    <button type="reset" class="btn btn-danger">Cancel</button>
+                    <button type="submit" class="btn btn-success" (click)="complaint()">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-img">
+    <div class="row">
+        <div class="col-md-12 col-12"><img class="img-fluid" src="https://www.alttabgs.com/wp-content/uploads/2017/01/contact_background_form.jpg" alt=""></div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+.form-label{
+font-size:20px;
+font-weight:600;
+text-shadow:2px 2px white;
+}
+
+.bg-img{
+    position:absolute;
+    z-index:-2;
+    filter: blur(1px);
+    background-attachment: fixed;
+}
+.main-form{
+    position: absolute;
+    z-index:-1;
+}
+.btn{
+    margin-left: 20px;
+    border-radius: 15px;
+    padding:10px;
+    font-weight:400;
+}

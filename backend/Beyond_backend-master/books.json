@@ -1,0 +1,102 @@
+[
+    {
+        "pid": "2",
+        "pimg": "https://www.obsonline.co.nz/user/images/1167_520_640.jpg?t=1912271436",
+        "pgenre": "Fiction",
+        "pname": "The God of Small Things",
+        "pprice": "$10.99",
+        "pauthor": "Arundhati Roy",
+        "pabout": "A Booker Prize-winning novel that explores the lives of twins Estha and Rahel in the southern Indian state of Kerala."
+    },
+   {
+        "pid": "1",
+        "pimg": "https://www.emdr.com/wp-content/uploads/2018/01/getting-past-your-past-hard-copy-book-2-1200x1213.png",
+        "pgenre": "Self-Help",
+        "pname": "Getting Past Your Past: Take Control of Your Life with Self-Help Techniques from EMDR Therapy",
+        "pprice": "$14.99",
+        "pauthor": "Francine Shapiro",
+        "pabout": "A self-help book that introduces readers to Eye Movement Desensitization and Reprocessing (EMDR) therapy, offering practical techniques to overcome past traumas and improve mental health."
+    },
+    {
+        "pid": "1",
+        "pimg": "https://i.pinimg.com/originals/4a/2c/59/4a2c59f0ba408e61495895f540bbbf01.jpg",
+        "pgenre": "Fiction",
+        "pname": "The 3 Mistakes of My Life",
+        "pprice": "$9.99",
+        "pauthor": "Chetan Bhagat",
+        "pabout": "A story of three friends in Ahmedabad who set out to make a mark in life and face challenges that test their friendship and dreams. The novel is inspired by real events and explores themes of ambition, love, and destiny."
+    },
+
+    {
+        "pid": "1",
+        "pimg": "https://i0.wp.com/360marathi.in/wp-content/uploads/2022/03/Harry-Potter-And-The-Sorcerers-Stone-PDF-img.jpg?w=760&ssl=1",
+        "pgenre": "Fantasy",
+        "pname": "Harry Potter and the Sorcerer's Stone",
+        "pprice": "$9.99",
+        "pauthor": "J.K. Rowling",
+        "pabout": "The first book in the Harry Potter series, which introduces the young wizard Harry Potter and his adventures at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+        "pid": "2",
+        "pimg": "http://image.tmdb.org/t/p/original/csOv5H7R2zdnKaYuTrGVWohmo8d.jpg",
+        "pgenre": "Fantasy",
+        "pname": "Harry Potter and the Chamber of Secrets",
+        "pprice": "$9.99",
+        "pauthor": "J.K. Rowling",
+        "pabout": "The second book in the series, where Harry returns to Hogwarts and faces new dangers, including a monster hidden within the Chamber of Secrets."
+    },
+    {
+        "pid": "3",
+        "pimg": "http://image.tmdb.org/t/p/original/7Xfwr5haUUHbzcR1yYmy3hBQyp5.jpg",
+        "pgenre": "Fantasy",
+        "pname": "Harry Potter and the Prisoner of Azkaban",
+        "pprice": "$9.99",
+        "pauthor": "J.K. Rowling",
+        "pabout": "The third book in the series, in which Harry learns more about his past and meets the mysterious Sirius Black, an escaped prisoner from Azkaban."
+    },
+    {
+        "pid": "4",
+        "pimg": "https://image.tmdb.org/t/p/original/1npuMArTSXH5Wn3GK8Bdu9iD6ej.jpg",
+        "pgenre": "Fantasy",
+        "pname": "Harry Potter and the Goblet of Fire",
+        "pprice": "$9.99",
+        "pauthor": "J.K. Rowling",
+        "pabout": "The fourth book in the series, featuring the Triwizard Tournament and the return of the dark wizard Voldemort."
+    },
+    {
+        "pid": "5",
+        "pimg": "https://image.tmdb.org/t/p/original/g6n8G0xPnBVUIKKK41sNmbZB5h4.jpg",
+        "pgenre": "Fantasy",
+        "pname": "Harry Potter and the Order of the Phoenix",
+        "pprice": "$9.99",
+        "pauthor": "J.K. Rowling",
+        "pabout": "The fifth book in the series, where Harry faces challenges from the Ministry of Magic and forms Dumbledore's Army to fight against Voldemort and his followers."
+    },
+    {
+        "pid": "6",
+        "pimg": "https://www.jamesjennison.net/wp-content/uploads/2020/05/Ag21otqbeynZPGjEbzyr3X5Us0j.jpg",
+        "pgenre": "Fantasy",
+        "pname": "Harry Potter and the Half-Blood Prince",
+        "pprice": "$9.99",
+        "pauthor": "J.K. Rowling",
+        "pabout": "The sixth book in the series, focusing on Harry's discovery of the mysterious Half-Blood Prince and the increasing threat of Voldemort."
+    },
+    {
+        "pid": "7",
+        "pimg": "https://image.tmdb.org/t/p/original/c54HpQmuwXjHq2C9wmoACjxoom3.jpg",
+        "pgenre": "Fantasy",
+        "pname": "Harry Potter and the Deathly Hallows",
+        "pprice": "$9.99",
+        "pauthor": "J.K. Rowling",
+        "pabout": "The seventh and final book in the series, where Harry, Ron, and Hermione embark on a quest to defeat Voldemort once and for all."
+    },
+    {
+        "pid": "8",
+        "pimg": "https://uii.fr/wp-content/uploads/2020/04/81DQBii5GlL.jpg",
+        "pgenre": "Fantasy",
+        "pname": "Harry Potter and the Cursed Child",
+        "pprice": "$19.99",
+        "pauthor": "J.K. Rowling, John Tiffany, and Jack Thorne",
+        "pabout": "A play and the eighth story in the Harry Potter series, following Harry's son Albus as he struggles with the legacy of his famous father."
+    }
+]
